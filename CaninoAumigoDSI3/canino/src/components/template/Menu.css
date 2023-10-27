@@ -1,0 +1,95 @@
+nav {
+  background-color: #ffffff;
+
+  width: 100%;
+  height: 10vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav div {
+  width: 65%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav div.logo {
+  height: auto;
+  width: auto;
+}
+
+.link {
+  text-decoration: none;
+
+  background-color: #ffffff;
+
+  width: 100px;
+  height: 40px;
+
+  color: rgb(0, 0, 0);
+
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: bold;
+
+  transition: 0.25s ease-in-out;
+}
+
+.link:hover {
+  background-color: #d5e8f8;
+
+  transition: 0.25s ease-in-out;
+}
+.link:active{
+  background-color: #00ffff;
+  transition: 0.5s ease-in-out;
+  
+}
+span{
+  width: 100px;
+  height: 40px;
+
+  color: #ffffff;
+
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1E91F7;
+}
+/* RESPONSIVIDADE DO MENU */
+@media screen and (max-width: 600px) {
+  nav{
+    flex-direction: column;
+    height: auto;
+  }
+  nav > div{
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+  }
+
+  nav .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+  }
+
+  nav .links .link {
+    width: 100%;
+    border-radius: 0%;
+  }
+} 
